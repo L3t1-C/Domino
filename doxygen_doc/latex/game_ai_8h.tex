@@ -1,0 +1,154 @@
+\doxysection{C\+:/\+Users/letyc/\+Desktop/882713\+\_\+\+Cantoni/include/game\+Ai.h File Reference}
+\label{game_ai_8h}\index{C:/Users/letyc/Desktop/882713\_Cantoni/include/gameAi.h@{C:/Users/letyc/Desktop/882713\_Cantoni/include/gameAi.h}}
+
+
+This file defines the functions that are used to play the game in AI mode.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include "{}game\+Move.\+h"{}}\newline
+{\ttfamily \#include "{}checks.\+h"{}}\newline
+{\ttfamily \#include "{}print\+Graphic.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ sort\+Tiles} (\textbf{ Tile} $\ast$tiles, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Function to sort the player tiles based on their score (es.[3$\vert$2] has a score=5). \end{DoxyCompactList}\item 
+int \textbf{ Move\+Ai} (int choice, \textbf{ Tile} selected\+Tiles, \textbf{ Tile} $\ast$players\+Tiles, int num\+Tiles, \textbf{ Tile} $\ast$$\ast$board\+Game)
+\begin{DoxyCompactList}\small\item\em Function to make a move for the AI. \end{DoxyCompactList}\item 
+void \textbf{ game\+Start\+Ai} (\textbf{ Tile} $\ast$players\+Tiles, int num\+Tiles, \textbf{ Tile} $\ast$$\ast$board\+Game)
+\begin{DoxyCompactList}\small\item\em Initial function for the AI to choose a tile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file defines the functions that are used to play the game in AI mode. 
+
+\begin{DoxyAuthor}{Author}
+Cantoni Letizia 882713 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\index{gameAi.h@{gameAi.h}!gameStartAi@{gameStartAi}}
+\index{gameStartAi@{gameStartAi}!gameAi.h@{gameAi.h}}
+\doxysubsubsection{gameStartAi()}
+{\footnotesize\ttfamily \label{game_ai_8h_a934cb52bbbe5490f7e15057626c587be} 
+void game\+Start\+Ai (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{, }\item[{int}]{num\+Tiles}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{}\end{DoxyParamCaption})}
+
+
+
+Initial function for the AI to choose a tile. 
+
+Function to make a move for the AI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em players\+Tiles} & The array of tiles available to the AI. \\
+\hline
+{\em num\+Tiles} & The number of tiles available to the AI. \\
+\hline
+{\em board\+Game} & The current state of the game board. \\
+\hline
+\end{DoxyParams}
+it sorts the tiles so the first match you find is the one with the highest score
+
+if the tile is not already played
+
+if the tile was not inserted i carry on
+
+else i wait just for the user to see the move and then i start checking the tiles from the start
+
+if the tile has already been played i go to the next
+
+if there are no avaiable moves exit
+
+if all the tiles have been played print the phrase below else print the remaining tiles\index{gameAi.h@{gameAi.h}!MoveAi@{MoveAi}}
+\index{MoveAi@{MoveAi}!gameAi.h@{gameAi.h}}
+\doxysubsubsection{MoveAi()}
+{\footnotesize\ttfamily \label{game_ai_8h_a3692a977858b3ae97f4b58f483ebab0e} 
+int Move\+Ai (\begin{DoxyParamCaption}\item[{int}]{choice}{, }\item[{\textbf{ Tile}}]{selected\+Tiles}{, }\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{, }\item[{int}]{num\+Tiles}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{}\end{DoxyParamCaption})}
+
+
+
+Function to make a move for the AI. 
+
+Function to sort the player tiles based on their score (es.[3$\vert$2] has a score=5).
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & The index of the tile chosen by the AI. \\
+\hline
+{\em selected\+Tiles} & The tile chosen by the AI. \\
+\hline
+{\em players\+Tiles} & The array of tiles available to the AI. \\
+\hline
+{\em num\+Tiles} & The number of tiles available to the AI. \\
+\hline
+{\em board\+Game} & The current state of the game board. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 1 if the move was successful, 0 otherwise. 
+\end{DoxyReturn}
+Initialize the random number generator with the current time
+
+Generates a random number between 0 and 4 that give us a probability of 80\% that is != 0
+
+Possible row where to insert the tile
+
+I will try for every row if there is a match
+
+Possible right column where to insert the tile
+
+Possible left column where to insert the tile
+
+If there is a possible right cell
+
+If the randon number is !=0 the vertical is true, so we try to place it vertical
+
+If the moveis not valid with the vertical tile, we try with the horizonal tile
+
+if the move is valid we add it
+
+else we try with the flipped tile and if the move is valid we add it
+
+If there is a possible left cell
+
+If the randon number is !=0 the vertical is true, so we try to place it vertical
+
+If the move is not valid with the vertical tile, we try with the horizonal tile
+
+if the move is valid we add it
+
+else we try with the flipped tile and if the move is valid we add it
+
+If there is a possible right AND left cell
+
+If the move is not valid on either left or right with the vertical tile, we try with the horizonal tile
+
+if the move is valid left we add it
+
+else if the move is valid with the flipped tile left we add it
+
+if the move is valid right we add it
+
+else if the move is valid with the flipped tile right we add it\index{gameAi.h@{gameAi.h}!sortTiles@{sortTiles}}
+\index{sortTiles@{sortTiles}!gameAi.h@{gameAi.h}}
+\doxysubsubsection{sortTiles()}
+{\footnotesize\ttfamily \label{game_ai_8h_a4245dfffd054bc7de9f9d212b8eae552} 
+void sort\+Tiles (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{tiles}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Function to sort the player tiles based on their score (es.[3$\vert$2] has a score=5). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tiles} & The array of tiles to sort(the player tiles). \\
+\hline
+{\em num\+Tiles} & The number of tiles available to the AI. \\
+\hline
+\end{DoxyParams}
+Move special tiles to the second position so it\textquotesingle{}s likely it mirrores the tile with the highest score

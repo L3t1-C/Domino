@@ -1,0 +1,309 @@
+\begin{theindex}
+
+  \item {882713\_Cantoni}, 1
+
+  \indexspace
+
+  \item {addTile}
+    \subitem {gameMove.c}, 43
+    \subitem {gameMove.h}, 19
+
+  \indexspace
+
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/include/checks.h}, 9, 
+		13
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/include/gameAi.h}, 13, 
+		16
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/include/gameInteractive.h}, 
+		16, 18
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/include/gameMove.h}, 18, 
+		23
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/include/printGraphic.h}, 
+		23, 27
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/include/tile.h}, 27, 29
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/include/userInputs.h}, 
+		29, 32
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/main.c}, 32
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/README.md}, 33
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/src/checks.c}, 33
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/src/gameAi.c}, 38
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/src/gameInteractive.c}, 
+		41
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/src/gameMove.c}, 43
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/src/printGraphic.c}, 47
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/src/tile.c}, 49
+  \item {C:/Users/letyc/Desktop/882713\_Cantoni/src/userInputs.c}, 52
+  \item {checkEndgame}
+    \subitem {checks.c}, 34
+    \subitem {checks.h}, 10
+  \item {checks.c}
+    \subitem {checkEndgame}, 34
+    \subitem {isValid}, 34
+    \subitem {isValidFlat}, 35
+    \subitem {possibleLeftCell}, 36
+    \subitem {possibleRightCell}, 36
+    \subitem {possibleRows}, 36
+  \item {checks.h}
+    \subitem {checkEndgame}, 10
+    \subitem {isValid}, 10
+    \subitem {isValidFlat}, 11
+    \subitem {possibleLeftCell}, 11
+    \subitem {possibleRightCell}, 12
+    \subitem {possibleRows}, 12
+  \item {countScore}
+    \subitem {gameMove.c}, 44
+    \subitem {gameMove.h}, 20
+  \item {countTiles}
+    \subitem {gameMove.c}, 44
+    \subitem {gameMove.h}, 20
+
+  \indexspace
+
+  \item {delay}
+    \subitem {printGraphic.c}, 47
+    \subitem {printGraphic.h}, 24
+
+  \indexspace
+
+  \item {endScreen}
+    \subitem {printGraphic.c}, 48
+    \subitem {printGraphic.h}, 24
+
+  \indexspace
+
+  \item {flipTile}
+    \subitem {gameMove.c}, 45
+    \subitem {gameMove.h}, 21
+  \item {free\_game}
+    \subitem {gameMove.c}, 45
+    \subitem {gameMove.h}, 21
+
+  \indexspace
+
+  \item {gameAi.c}
+    \subitem {gameStartAi}, 38
+    \subitem {MoveAi}, 39
+    \subitem {sortTiles}, 40
+  \item {gameAi.h}
+    \subitem {gameStartAi}, 14
+    \subitem {MoveAi}, 14
+    \subitem {sortTiles}, 15
+  \item {gameInteractive.c}
+    \subitem {gameStartInteractive}, 41
+    \subitem {makeMove}, 41
+    \subitem {tileOrientation}, 42
+  \item {gameInteractive.h}
+    \subitem {gameStartInteractive}, 17
+    \subitem {makeMove}, 17
+    \subitem {tileOrientation}, 17
+  \item {gameMove.c}
+    \subitem {addTile}, 43
+    \subitem {countScore}, 44
+    \subitem {countTiles}, 44
+    \subitem {flipTile}, 45
+    \subitem {free\_game}, 45
+    \subitem {gameStart}, 45
+    \subitem {removePlayerTile}, 46
+    \subitem {scoreTile}, 46
+    \subitem {swapTiles}, 46
+  \item {gameMove.h}
+    \subitem {addTile}, 19
+    \subitem {countScore}, 20
+    \subitem {countTiles}, 20
+    \subitem {flipTile}, 21
+    \subitem {free\_game}, 21
+    \subitem {gameStart}, 21
+    \subitem {removePlayerTile}, 22
+    \subitem {scoreTile}, 22
+    \subitem {swapTiles}, 23
+  \item {gameStart}
+    \subitem {gameMove.c}, 45
+    \subitem {gameMove.h}, 21
+  \item {gameStartAi}
+    \subitem {gameAi.c}, 38
+    \subitem {gameAi.h}, 14
+  \item {gameStartInteractive}
+    \subitem {gameInteractive.c}, 41
+    \subitem {gameInteractive.h}, 17
+  \item {getMenuMode}
+    \subitem {userInputs.c}, 53
+    \subitem {userInputs.h}, 30
+  \item {getMoveTiles}
+    \subitem {userInputs.c}, 53
+    \subitem {userInputs.h}, 30
+  \item {getOrientation}
+    \subitem {userInputs.c}, 53
+    \subitem {userInputs.h}, 30
+  \item {getPosition}
+    \subitem {userInputs.c}, 53
+    \subitem {userInputs.h}, 31
+  \item {getRow}
+    \subitem {userInputs.c}, 54
+    \subitem {userInputs.h}, 31
+  \item {getTilesNumber}
+    \subitem {userInputs.c}, 54
+    \subitem {userInputs.h}, 31
+
+  \indexspace
+
+  \item {initializationBoard}
+    \subitem {tile.c}, 50
+    \subitem {tile.h}, 27
+  \item {initializationPlayerTiles}
+    \subitem {tile.c}, 51
+    \subitem {tile.h}, 28
+  \item {initializationSpecialTiles}
+    \subitem {tile.c}, 51
+    \subitem {tile.h}, 28
+  \item {isValid}
+    \subitem {checks.c}, 34
+    \subitem {checks.h}, 10
+  \item {isValidFlat}
+    \subitem {checks.c}, 35
+    \subitem {checks.h}, 11
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.c}, 33
+  \item {main.c}
+    \subitem {main}, 33
+  \item {makeMove}
+    \subitem {gameInteractive.c}, 41
+    \subitem {gameInteractive.h}, 17
+  \item {MoveAi}
+    \subitem {gameAi.c}, 39
+    \subitem {gameAi.h}, 14
+
+  \indexspace
+
+  \item {occupied}
+    \subitem {Tile}, 7
+
+  \indexspace
+
+  \item {possibleLeftCell}
+    \subitem {checks.c}, 36
+    \subitem {checks.h}, 11
+  \item {possibleRightCell}
+    \subitem {checks.c}, 36
+    \subitem {checks.h}, 12
+  \item {possibleRows}
+    \subitem {checks.c}, 36
+    \subitem {checks.h}, 12
+  \item {printBoardGame}
+    \subitem {printGraphic.c}, 48
+    \subitem {printGraphic.h}, 24
+  \item {printFirstScreen}
+    \subitem {printGraphic.c}, 48
+    \subitem {printGraphic.h}, 25
+  \item {printGraphic.c}
+    \subitem {delay}, 47
+    \subitem {endScreen}, 48
+    \subitem {printBoardGame}, 48
+    \subitem {printFirstScreen}, 48
+    \subitem {printSelectedTiles}, 48
+    \subitem {printTiles}, 49
+    \subitem {printTilesPlayer}, 49
+    \subitem {show\_rules}, 49
+  \item {printGraphic.h}
+    \subitem {delay}, 24
+    \subitem {endScreen}, 24
+    \subitem {printBoardGame}, 24
+    \subitem {printFirstScreen}, 25
+    \subitem {printSelectedTiles}, 25
+    \subitem {printTiles}, 26
+    \subitem {printTilesPlayer}, 26
+    \subitem {show\_rules}, 26
+  \item {printSelectedTiles}
+    \subitem {printGraphic.c}, 48
+    \subitem {printGraphic.h}, 25
+  \item {printTiles}
+    \subitem {printGraphic.c}, 49
+    \subitem {printGraphic.h}, 26
+  \item {printTilesPlayer}
+    \subitem {printGraphic.c}, 49
+    \subitem {printGraphic.h}, 26
+
+  \indexspace
+
+  \item {removePlayerTile}
+    \subitem {gameMove.c}, 46
+    \subitem {gameMove.h}, 22
+
+  \indexspace
+
+  \item {scoreTile}
+    \subitem {gameMove.c}, 46
+    \subitem {gameMove.h}, 22
+  \item {show\_rules}
+    \subitem {printGraphic.c}, 49
+    \subitem {printGraphic.h}, 26
+  \item {side1}
+    \subitem {Tile}, 7
+  \item {side2}
+    \subitem {Tile}, 7
+  \item {sortTiles}
+    \subitem {gameAi.c}, 40
+    \subitem {gameAi.h}, 15
+  \item {special}
+    \subitem {Tile}, 8
+  \item {SPECIAL\_TILE\_1\_SIDE1}
+    \subitem {tile.c}, 50
+  \item {SPECIAL\_TILE\_1\_SIDE2}
+    \subitem {tile.c}, 50
+  \item {SPECIAL\_TILE\_2\_SIDE1}
+    \subitem {tile.c}, 50
+  \item {SPECIAL\_TILE\_2\_SIDE2}
+    \subitem {tile.c}, 50
+  \item {swapTiles}
+    \subitem {gameMove.c}, 46
+    \subitem {gameMove.h}, 23
+
+  \indexspace
+
+  \item {Tile}, 7
+    \subitem {occupied}, 7
+    \subitem {side1}, 7
+    \subitem {side2}, 7
+    \subitem {special}, 8
+    \subitem {vertical}, 8
+  \item {tile.c}
+    \subitem {initializationBoard}, 50
+    \subitem {initializationPlayerTiles}, 51
+    \subitem {initializationSpecialTiles}, 51
+    \subitem {SPECIAL\_TILE\_1\_SIDE1}, 50
+    \subitem {SPECIAL\_TILE\_1\_SIDE2}, 50
+    \subitem {SPECIAL\_TILE\_2\_SIDE1}, 50
+    \subitem {SPECIAL\_TILE\_2\_SIDE2}, 50
+  \item {tile.h}
+    \subitem {initializationBoard}, 27
+    \subitem {initializationPlayerTiles}, 28
+    \subitem {initializationSpecialTiles}, 28
+  \item {tileOrientation}
+    \subitem {gameInteractive.c}, 42
+    \subitem {gameInteractive.h}, 17
+
+  \indexspace
+
+  \item {userInputs.c}
+    \subitem {getMenuMode}, 53
+    \subitem {getMoveTiles}, 53
+    \subitem {getOrientation}, 53
+    \subitem {getPosition}, 53
+    \subitem {getRow}, 54
+    \subitem {getTilesNumber}, 54
+  \item {userInputs.h}
+    \subitem {getMenuMode}, 30
+    \subitem {getMoveTiles}, 30
+    \subitem {getOrientation}, 30
+    \subitem {getPosition}, 31
+    \subitem {getRow}, 31
+    \subitem {getTilesNumber}, 31
+
+  \indexspace
+
+  \item {vertical}
+    \subitem {Tile}, 8
+
+\end{theindex}

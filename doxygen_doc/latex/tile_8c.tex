@@ -1,0 +1,136 @@
+\doxysection{C\+:/\+Users/letyc/\+Desktop/882713\+\_\+\+Cantoni/src/tile.c File Reference}
+\label{tile_8c}\index{C:/Users/letyc/Desktop/882713\_Cantoni/src/tile.c@{C:/Users/letyc/Desktop/882713\_Cantoni/src/tile.c}}
+
+
+This file implements all the functions that initialize the player tiles (with the special tiles) and the boardgame.  
+
+
+{\ttfamily \#include "{}../include/tile.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ SPECIAL\+\_\+\+TILE\+\_\+1\+\_\+\+SIDE1}~11
+\item 
+\#define \textbf{ SPECIAL\+\_\+\+TILE\+\_\+1\+\_\+\+SIDE2}~11
+\item 
+\#define \textbf{ SPECIAL\+\_\+\+TILE\+\_\+2\+\_\+\+SIDE1}~12
+\item 
+\#define \textbf{ SPECIAL\+\_\+\+TILE\+\_\+2\+\_\+\+SIDE2}~21
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Tile} $\ast$$\ast$ \textbf{ initialization\+Board} (int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Initializes the game board. \end{DoxyCompactList}\item 
+\textbf{ Tile} $\ast$ \textbf{ initialization\+Player\+Tiles} (int num\+Tiles, \textbf{ Tile} $\ast$special\+Tiles)
+\begin{DoxyCompactList}\small\item\em Initializes the player\textquotesingle{}s tiles. \end{DoxyCompactList}\item 
+void \textbf{ initialization\+Special\+Tiles} (\textbf{ Tile} $\ast$special\+Tiles, int num\+Special)
+\begin{DoxyCompactList}\small\item\em Initializes the special tiles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file implements all the functions that initialize the player tiles (with the special tiles) and the boardgame. 
+
+\begin{DoxyAuthor}{Author}
+Cantoni Letizia 882713 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\index{tile.c@{tile.c}!SPECIAL\_TILE\_1\_SIDE1@{SPECIAL\_TILE\_1\_SIDE1}}
+\index{SPECIAL\_TILE\_1\_SIDE1@{SPECIAL\_TILE\_1\_SIDE1}!tile.c@{tile.c}}
+\doxysubsubsection{SPECIAL\_TILE\_1\_SIDE1}
+{\footnotesize\ttfamily \label{tile_8c_a6c01e94116f74074bdc2697d39f277c9} 
+\#define SPECIAL\+\_\+\+TILE\+\_\+1\+\_\+\+SIDE1~11}
+
+\index{tile.c@{tile.c}!SPECIAL\_TILE\_1\_SIDE2@{SPECIAL\_TILE\_1\_SIDE2}}
+\index{SPECIAL\_TILE\_1\_SIDE2@{SPECIAL\_TILE\_1\_SIDE2}!tile.c@{tile.c}}
+\doxysubsubsection{SPECIAL\_TILE\_1\_SIDE2}
+{\footnotesize\ttfamily \label{tile_8c_ab39e690ba894ccd3daa929b8e6b79b9c} 
+\#define SPECIAL\+\_\+\+TILE\+\_\+1\+\_\+\+SIDE2~11}
+
+\index{tile.c@{tile.c}!SPECIAL\_TILE\_2\_SIDE1@{SPECIAL\_TILE\_2\_SIDE1}}
+\index{SPECIAL\_TILE\_2\_SIDE1@{SPECIAL\_TILE\_2\_SIDE1}!tile.c@{tile.c}}
+\doxysubsubsection{SPECIAL\_TILE\_2\_SIDE1}
+{\footnotesize\ttfamily \label{tile_8c_aa3debd44d2c7481f3c14731b9211b8d7} 
+\#define SPECIAL\+\_\+\+TILE\+\_\+2\+\_\+\+SIDE1~12}
+
+\index{tile.c@{tile.c}!SPECIAL\_TILE\_2\_SIDE2@{SPECIAL\_TILE\_2\_SIDE2}}
+\index{SPECIAL\_TILE\_2\_SIDE2@{SPECIAL\_TILE\_2\_SIDE2}!tile.c@{tile.c}}
+\doxysubsubsection{SPECIAL\_TILE\_2\_SIDE2}
+{\footnotesize\ttfamily \label{tile_8c_a48b8be3e34f122c9840b9fab930bf5f3} 
+\#define SPECIAL\+\_\+\+TILE\+\_\+2\+\_\+\+SIDE2~21}
+
+
+
+\doxysubsection{Function Documentation}
+\index{tile.c@{tile.c}!initializationBoard@{initializationBoard}}
+\index{initializationBoard@{initializationBoard}!tile.c@{tile.c}}
+\doxysubsubsection{initializationBoard()}
+{\footnotesize\ttfamily \label{tile_8c_acf9ccf1fc4f84aa7cb0026908a4ebe1b} 
+\textbf{ Tile} $\ast$$\ast$ initialization\+Board (\begin{DoxyParamCaption}\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the game board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Tiles} & The number of tiles in the game. used to create the \textquotesingle{}matrix\textquotesingle{} of boardgame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tile$\ast$$\ast$ Returns the initialized board game. 
+\end{DoxyReturn}
+if a vertical tile is added on the last row
+
+Allocate memory for rows array
+
+Allocate memory for each column in the current row\index{tile.c@{tile.c}!initializationPlayerTiles@{initializationPlayerTiles}}
+\index{initializationPlayerTiles@{initializationPlayerTiles}!tile.c@{tile.c}}
+\doxysubsubsection{initializationPlayerTiles()}
+{\footnotesize\ttfamily \label{tile_8c_a41dfa1a9b4895a5724e39e09368b66be} 
+\textbf{ Tile} $\ast$ initialization\+Player\+Tiles (\begin{DoxyParamCaption}\item[{int}]{num\+Tiles}{, }\item[{\textbf{ Tile} $\ast$}]{special\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the player\textquotesingle{}s tiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Tiles} & The number of tiles the player has. \\
+\hline
+{\em special\+Tiles} & The array of special tiles in the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tile$\ast$ Returns the initialized player\textquotesingle{}s Tiles. 
+\end{DoxyReturn}
+Initialize the random number generator with the current time
+
+Generates a random number between 0 and 9
+
+90\% chance of rand\+Var being different from 1
+
+Generates a random index between 0 and 2
+
+Generate a casual number from 1 to 6\index{tile.c@{tile.c}!initializationSpecialTiles@{initializationSpecialTiles}}
+\index{initializationSpecialTiles@{initializationSpecialTiles}!tile.c@{tile.c}}
+\doxysubsubsection{initializationSpecialTiles()}
+{\footnotesize\ttfamily \label{tile_8c_ac4cee54466f8875721a61e875d9e0d98} 
+void initialization\+Special\+Tiles (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{special\+Tiles}{, }\item[{int}]{num\+Special}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the special tiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em special\+Tiles} & The special tiles to initialize. \doxyref{Tile}{p.}{struct_tile} $\ast$ \\
+\hline
+{\em num\+Special} & The number of special tiles. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tile$\ast$ Returns the initialized special tiles. 
+\end{DoxyReturn}

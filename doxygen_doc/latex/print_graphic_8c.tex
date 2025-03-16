@@ -1,0 +1,176 @@
+\doxysection{C\+:/\+Users/letyc/\+Desktop/882713\+\_\+\+Cantoni/src/print\+Graphic.c File Reference}
+\label{print_graphic_8c}\index{C:/Users/letyc/Desktop/882713\_Cantoni/src/printGraphic.c@{C:/Users/letyc/Desktop/882713\_Cantoni/src/printGraphic.c}}
+
+
+This file implements all the functions that are used to display the game implementation.  
+
+
+{\ttfamily \#include "{}../include/print\+Graphic.\+h"{}}\newline
+{\ttfamily \#include "{}../include/game\+Move.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ delay} (int seconds)
+\begin{DoxyCompactList}\small\item\em Delays the execution for a specified number of seconds. \end{DoxyCompactList}\item 
+void \textbf{ print\+First\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Prints the first screen of the game. Just the title of the game. \end{DoxyCompactList}\item 
+int \textbf{ end\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Prints this screen when the game is over. and asks if the player wants to play again. \end{DoxyCompactList}\item 
+void \textbf{ show\+\_\+rules} ()
+\begin{DoxyCompactList}\small\item\em Displays the game rules. \end{DoxyCompactList}\item 
+void \textbf{ print\+Tiles} (\textbf{ Tile} d)
+\begin{DoxyCompactList}\small\item\em Prints a tile. [side1$\vert$dide2]. \end{DoxyCompactList}\item 
+void \textbf{ print\+Selected\+Tiles} (\textbf{ Tile} d)
+\begin{DoxyCompactList}\small\item\em Prints the tile selected by the player. in this function the vertical tile is printed differently from print\+Tiles. \end{DoxyCompactList}\item 
+void \textbf{ print\+Tiles\+Player} (\textbf{ Tile} $\ast$players\+Tiles, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Prints the player\textquotesingle{}s tiles. \end{DoxyCompactList}\item 
+void \textbf{ print\+Board\+Game} (\textbf{ Tile} $\ast$$\ast$board\+Game, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Prints the game board with all the tiles in the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file implements all the functions that are used to display the game implementation. 
+
+\begin{DoxyAuthor}{Author}
+Cantoni Letizia 882713 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\index{printGraphic.c@{printGraphic.c}!delay@{delay}}
+\index{delay@{delay}!printGraphic.c@{printGraphic.c}}
+\doxysubsubsection{delay()}
+{\footnotesize\ttfamily \label{print_graphic_8c_ac02219a52cea942ca0c158c5834e31bc} 
+void delay (\begin{DoxyParamCaption}\item[{int}]{seconds}{}\end{DoxyParamCaption})}
+
+
+
+Delays the execution for a specified number of seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & The number of seconds to delay. \\
+\hline
+\end{DoxyParams}
+\index{printGraphic.c@{printGraphic.c}!endScreen@{endScreen}}
+\index{endScreen@{endScreen}!printGraphic.c@{printGraphic.c}}
+\doxysubsubsection{endScreen()}
+{\footnotesize\ttfamily \label{print_graphic_8c_ae3fe0c35959466f92d3fd5b18b74b461} 
+int end\+Screen (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Prints this screen when the game is over. and asks if the player wants to play again. 
+
+\begin{DoxyReturn}{Returns}
+int Returns 1 if the player wants to play another game. 
+\end{DoxyReturn}
+\index{printGraphic.c@{printGraphic.c}!printBoardGame@{printBoardGame}}
+\index{printBoardGame@{printBoardGame}!printGraphic.c@{printGraphic.c}}
+\doxysubsubsection{printBoardGame()}
+{\footnotesize\ttfamily \label{print_graphic_8c_a7e691ef0f133d4fa2581e1093a062041} 
+void print\+Board\+Game (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Prints the game board with all the tiles in the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+Game} & The game board. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+\end{DoxyParams}
+this is just for graphic
+
+this is just for graphic
+
+prints the number of the rows
+
+if a cell of the boardgame is not occupied it print the equivalent of the tile but in spaces
+
+else if the cell is ocuupied it prints the tile who is in it
+
+this is just for graphic
+
+here it prints the score= the sum of all the tile score in the game
+
+this is just for graphic\index{printGraphic.c@{printGraphic.c}!printFirstScreen@{printFirstScreen}}
+\index{printFirstScreen@{printFirstScreen}!printGraphic.c@{printGraphic.c}}
+\doxysubsubsection{printFirstScreen()}
+{\footnotesize\ttfamily \label{print_graphic_8c_aeebf6803e689f7117fa192bdf342e76b} 
+void print\+First\+Screen (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Prints the first screen of the game. Just the title of the game. 
+
+Delays the execution for a specified number of seconds. Color green
+
+Color blue
+
+reset color
+
+cursive
+
+reset color\index{printGraphic.c@{printGraphic.c}!printSelectedTiles@{printSelectedTiles}}
+\index{printSelectedTiles@{printSelectedTiles}!printGraphic.c@{printGraphic.c}}
+\doxysubsubsection{printSelectedTiles()}
+{\footnotesize\ttfamily \label{print_graphic_8c_abb44a050a97713b9d4b827c627cf452d} 
+void print\+Selected\+Tiles (\begin{DoxyParamCaption}\item[{\textbf{ Tile}}]{d}{}\end{DoxyParamCaption})}
+
+
+
+Prints the tile selected by the player. in this function the vertical tile is printed differently from print\+Tiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The selected tile. \\
+\hline
+\end{DoxyParams}
+\index{printGraphic.c@{printGraphic.c}!printTiles@{printTiles}}
+\index{printTiles@{printTiles}!printGraphic.c@{printGraphic.c}}
+\doxysubsubsection{printTiles()}
+{\footnotesize\ttfamily \label{print_graphic_8c_a9d4a9664a6f15e6035661c3ba07925f4} 
+void print\+Tiles (\begin{DoxyParamCaption}\item[{\textbf{ Tile}}]{d}{}\end{DoxyParamCaption})}
+
+
+
+Prints a tile. [side1$\vert$dide2]. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The tile to print. \\
+\hline
+\end{DoxyParams}
+\index{printGraphic.c@{printGraphic.c}!printTilesPlayer@{printTilesPlayer}}
+\index{printTilesPlayer@{printTilesPlayer}!printGraphic.c@{printGraphic.c}}
+\doxysubsubsection{printTilesPlayer()}
+{\footnotesize\ttfamily \label{print_graphic_8c_a6c5913b2f27dc232e6cf343825a0a281} 
+void print\+Tiles\+Player (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Prints the player\textquotesingle{}s tiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players\+Tiles} & The player\textquotesingle{}s tiles. \\
+\hline
+{\em num\+Tiles} & The number of tiles the player has. \\
+\hline
+\end{DoxyParams}
+here if a tile is occupied(not already played) it is displayed\index{printGraphic.c@{printGraphic.c}!show\_rules@{show\_rules}}
+\index{show\_rules@{show\_rules}!printGraphic.c@{printGraphic.c}}
+\doxysubsubsection{show\_rules()}
+{\footnotesize\ttfamily \label{print_graphic_8c_af8a8f15659aed9883370b85f17338aec} 
+void show\+\_\+rules (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the game rules. 
+
+Prints the end screen of the game and returns if the player wants to play again. wait for the player to press a button
+
+clean input buffer

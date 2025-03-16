@@ -1,0 +1,211 @@
+\doxysection{C\+:/\+Users/letyc/\+Desktop/882713\+\_\+\+Cantoni/src/checks.c File Reference}
+\label{checks_8c}\index{C:/Users/letyc/Desktop/882713\_Cantoni/src/checks.c@{C:/Users/letyc/Desktop/882713\_Cantoni/src/checks.c}}
+
+
+This file implements all the functions that are used to check the insertion of a tile into the game.  
+
+
+{\ttfamily \#include "{}../include/checks.\+h"{}}\newline
+{\ttfamily \#include "{}../include/print\+Graphic.\+h"{}}\newline
+{\ttfamily \#include "{}../include/game\+Move.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ possible\+Rows} (\textbf{ Tile} $\ast$$\ast$board\+Game, int num\+Tiles)
+\item 
+int \textbf{ possible\+Left\+Cell} (\textbf{ Tile} $\ast$board\+Game, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Finds the possible left cell in which a tile can be add on the game board in a specific row. \end{DoxyCompactList}\item 
+int \textbf{ possible\+Right\+Cell} (\textbf{ Tile} $\ast$board\+Game, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Finds the possible right cell in which a tile can be add on the game board in a specific row. \end{DoxyCompactList}\item 
+int \textbf{ is\+Valid} (int row, int col, \textbf{ Tile} selectedtile, char pos, \textbf{ Tile} $\ast$$\ast$board\+Game, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Checks if a move is valid. \end{DoxyCompactList}\item 
+int \textbf{ is\+Valid\+Flat} (int row, int col, \textbf{ Tile} selectedtile, char pos, \textbf{ Tile} $\ast$$\ast$board\+Game, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Checks if a flat move is valid (flat move = the tile to insert is not vertical). \end{DoxyCompactList}\item 
+int \textbf{ check\+Endgame} (\textbf{ Tile} $\ast$players\+Tiles, int num\+Tiles, \textbf{ Tile} $\ast$$\ast$board\+Game)
+\begin{DoxyCompactList}\small\item\em Checks if there are any available moves or the game is finished. is true when the game is finished. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file implements all the functions that are used to check the insertion of a tile into the game. 
+
+\begin{DoxyAuthor}{Author}
+Cantoni Letizia 882713 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\index{checks.c@{checks.c}!checkEndgame@{checkEndgame}}
+\index{checkEndgame@{checkEndgame}!checks.c@{checks.c}}
+\doxysubsubsection{checkEndgame()}
+{\footnotesize\ttfamily \label{checks_8c_a7a9be23b65030503f0a7c870e6f6d235} 
+int check\+Endgame (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{, }\item[{int}]{num\+Tiles}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{}\end{DoxyParamCaption})}
+
+
+
+Checks if there are any available moves or the game is finished. is true when the game is finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players\+Tiles} & The player\textquotesingle{}s tiles. \\
+\hline
+{\em num\+Tiles} & The number of tiles the player has. \\
+\hline
+{\em board\+Game} & The game board. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 1 if there are no available moves, 0 otherwise. 
+\end{DoxyReturn}
+Slides all the possible tile of the player
+
+if a tile is occupied it means that it has not yet been played
+
+for every \textquotesingle{}possible\textquotesingle{} row it checks if a certain move is valid right or left
+
+checks if the move is valid right or left
+
+if it finds a possible move it exits
+
+if no moves are possible\index{checks.c@{checks.c}!isValid@{isValid}}
+\index{isValid@{isValid}!checks.c@{checks.c}}
+\doxysubsubsection{isValid()}
+{\footnotesize\ttfamily \label{checks_8c_a53d7e7fdb9ff003a660cd95331001231} 
+int is\+Valid (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{col}{, }\item[{\textbf{ Tile}}]{selectedtile}{, }\item[{char}]{pos}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a move is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row to check. \\
+\hline
+{\em col} & The column to check. \\
+\hline
+{\em selectedtile} & The selected tile. \\
+\hline
+{\em pos} & The position to check.(left \textquotesingle{}s\textquotesingle{} or right \textquotesingle{}d\textquotesingle{}) \\
+\hline
+{\em board\+Game} & The game board. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 1 if the move is valid, 0 otherwise. 
+\end{DoxyReturn}
+I check If where I want to put the tile is not occupied
+
+and if the tile to insert is not vertical
+
+if I want to put the tile vertical I have to look that the cell below is unoccupied
+
+If i want to put the tile right
+
+If the upper part of the tile can be placed
+
+here I look to see if the tile I\textquotesingle{}m placing it next to is NOT vertical and it\textquotesingle{}s compatible with my card
+
+here I look to see if the tile I\textquotesingle{}m placing it next to is vertical and it\textquotesingle{}s compatible with my card
+
+If i want to put the tile left\index{checks.c@{checks.c}!isValidFlat@{isValidFlat}}
+\index{isValidFlat@{isValidFlat}!checks.c@{checks.c}}
+\doxysubsubsection{isValidFlat()}
+{\footnotesize\ttfamily \label{checks_8c_a0b748f5411941ec3337c9e3ce4d05311} 
+int is\+Valid\+Flat (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{col}{, }\item[{\textbf{ Tile}}]{selectedtile}{, }\item[{char}]{pos}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a flat move is valid (flat move = the tile to insert is not vertical). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row to check. \\
+\hline
+{\em col} & The column to check. \\
+\hline
+{\em selectedtile} & The selected tile. \\
+\hline
+{\em pos} & The position to check. \\
+\hline
+{\em board\+Game} & The game board. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 1 if the move is valid, 0 otherwise. 
+\end{DoxyReturn}
+If is special i can place it everywhere
+
+If i am trying to put the tile between two other tiles
+
+all the two tile must be compatible with the one i want to insert, in this case i am trying to insert the tile vertically
+
+all the two tile must be compatible with the one i want to insert, in this case i am trying to insert the tile horizontally
+
+If i am trying to put the tile right
+
+If the adjacent right tile is vertical and compatible with mine
+
+If the adjacent right tile is NOT vertical and compatible with mine
+
+If i am trying to put the tile left
+
+If the adjacent left tile is compatible with mine\index{checks.c@{checks.c}!possibleLeftCell@{possibleLeftCell}}
+\index{possibleLeftCell@{possibleLeftCell}!checks.c@{checks.c}}
+\doxysubsubsection{possibleLeftCell()}
+{\footnotesize\ttfamily \label{checks_8c_a627fc667f391f38a6db9f12caed6ad07} 
+int possible\+Left\+Cell (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{board\+Game}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Finds the possible left cell in which a tile can be add on the game board in a specific row. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+Game} & The game board. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the index of the possible left cell, or -\/1 if not found. 
+\end{DoxyReturn}
+\index{checks.c@{checks.c}!possibleRightCell@{possibleRightCell}}
+\index{possibleRightCell@{possibleRightCell}!checks.c@{checks.c}}
+\doxysubsubsection{possibleRightCell()}
+{\footnotesize\ttfamily \label{checks_8c_ac39af1226cad3e1728d680b5dfb03fa0} 
+int possible\+Right\+Cell (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{board\+Game}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Finds the possible right cell in which a tile can be add on the game board in a specific row. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+Game} & The game board. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the index of the possible right cell, or -\/1 if not found. 
+\end{DoxyReturn}
+\index{checks.c@{checks.c}!possibleRows@{possibleRows}}
+\index{possibleRows@{possibleRows}!checks.c@{checks.c}}
+\doxysubsubsection{possibleRows()}
+{\footnotesize\ttfamily \label{checks_8c_a3db54a7baff4c9e7aac6c35c01aa2453} 
+int possible\+Rows (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+Counts the possible rows in which a tile can be added on the game board. That is, look at which rows are occupied by at least one tile 
+\begin{DoxyParams}{Parameters}
+{\em board\+Game} & The game board. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the number of possible rows. 
+\end{DoxyReturn}
+Move to the next row as soon as we find an occupied cell

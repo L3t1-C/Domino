@@ -1,0 +1,272 @@
+\doxysection{C\+:/\+Users/letyc/\+Desktop/882713\+\_\+\+Cantoni/include/game\+Move.h File Reference}
+\label{game_move_8h}\index{C:/Users/letyc/Desktop/882713\_Cantoni/include/gameMove.h@{C:/Users/letyc/Desktop/882713\_Cantoni/include/gameMove.h}}
+
+
+This file defines all the functions that are used to move and insert the tiles in the game.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include "{}tile.\+h"{}}\newline
+{\ttfamily \#include "{}print\+Graphic.\+h"{}}\newline
+{\ttfamily \#include "{}user\+Inputs.\+h"{}}\newline
+{\ttfamily \#include "{}checks.\+h"{}}\newline
+{\ttfamily \#include "{}game\+Interactive.\+h"{}}\newline
+{\ttfamily \#include "{}game\+Ai.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ swap\+Tiles} (\textbf{ Tile} $\ast$tile1, \textbf{ Tile} $\ast$tile2)
+\begin{DoxyCompactList}\small\item\em Function to swap two tiles. \end{DoxyCompactList}\item 
+void \textbf{ remove\+Player\+Tile} (\textbf{ Tile} $\ast$players\+Tiles, int num\+Tiles, int choice)
+\begin{DoxyCompactList}\small\item\em Removes a choosen tile from the player\textquotesingle{}s tiles. \end{DoxyCompactList}\item 
+\textbf{ Tile} \textbf{ flip\+Tile} (\textbf{ Tile} d)
+\begin{DoxyCompactList}\small\item\em Flips a tile\+: flips the number of side1 with the number of side2. \end{DoxyCompactList}\item 
+int \textbf{ score\+Tile} (\textbf{ Tile} tile)
+\begin{DoxyCompactList}\small\item\em Calculate the score of a tile which is the sum of side1+side2 of the tile. \end{DoxyCompactList}\item 
+int \textbf{ count\+Score} (\textbf{ Tile} $\ast$$\ast$board\+Game, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Counts the total score of the tiles on the game board. \end{DoxyCompactList}\item 
+int \textbf{ count\+Tiles} (\textbf{ Tile} $\ast$players\+Tiles, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Counts the number of tiles the player has left to play. \end{DoxyCompactList}\item 
+void \textbf{ add\+Tile} (\textbf{ Tile} d, int row, int col, \textbf{ Tile} $\ast$$\ast$board\+Game, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Adds the chosen tile to the game board. \end{DoxyCompactList}\item 
+void \textbf{ game\+Start} (\textbf{ Tile} $\ast$players\+Tiles, int num\+Tiles, \textbf{ Tile} $\ast$$\ast$board\+Game)
+\begin{DoxyCompactList}\small\item\em Initial function to choose the game mode and start the game. \end{DoxyCompactList}\item 
+void \textbf{ free\+\_\+game} (\textbf{ Tile} $\ast$$\ast$board\+Game, int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Frees the memory allocated for the game board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file defines all the functions that are used to move and insert the tiles in the game. 
+
+\begin{DoxyAuthor}{Author}
+Cantoni Letizia 882713 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\index{gameMove.h@{gameMove.h}!addTile@{addTile}}
+\index{addTile@{addTile}!gameMove.h@{gameMove.h}}
+\doxysubsubsection{addTile()}
+{\footnotesize\ttfamily \label{game_move_8h_a1bbf880025e17fbecfc1fa7d9ca9a32e} 
+void add\+Tile (\begin{DoxyParamCaption}\item[{\textbf{ Tile}}]{d}{, }\item[{int}]{row}{, }\item[{int}]{col}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Adds the chosen tile to the game board. 
+
+Counts the number of tiles the player has left to play.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The chosen tile. \\
+\hline
+{\em row} & The row to insert the tile. \\
+\hline
+{\em col} & The column to insert the tile. \\
+\hline
+{\em board\+Game} & The game board. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+\end{DoxyParams}
+Add the tile to the board
+
+Handle special tiles
+
+Check if the tile is adjacent to another tile left
+
+Insert the tile mirroring the left tile
+
+Check if the tile to insert is vertical and if the tile left below is free
+
+Insert the tile below(vertical) copying the left tile up
+
+Insert the tile below(vertical) copying the adjacent left tile
+
+if the adjacent tile is vertical i need to flip the tile, otherwhise it will be\+: [2]\{3\} instead of [2]\{2\} [3]\{2\} [3]\{3\}
+
+Check if the tile is adjacent to another tile right
+
+Insert the tile mirroring the right tile
+
+Check if the tile to insert is vertical and if the tile right below is free
+
+Insert the tile below(vertical) copying the right tile up
+
+Insert the tile below(vertical) copying the adjacent right tile
+
+if the adjacent tile is vertical i need to flip the tile, otherwhise it will be\+: \{3\}[2] instead of [2]\{2\} \{2\}[3] [3]\{3\}
+
+Special tile [11$\vert$11] Increment digits of all tiles by 1, except 6 which becomes 1
+
+if the tile is not special and is vertical Add the tile also to the next row\index{gameMove.h@{gameMove.h}!countScore@{countScore}}
+\index{countScore@{countScore}!gameMove.h@{gameMove.h}}
+\doxysubsubsection{countScore()}
+{\footnotesize\ttfamily \label{game_move_8h_a1e78b61fbdcb05c63fef1ff001c83342} 
+int count\+Score (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Counts the total score of the tiles on the game board. 
+
+Calculate the score of a tile which is the sum of side1+side2 of the tile
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+Game} & The game board. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the total score in the board. 
+\end{DoxyReturn}
+\index{gameMove.h@{gameMove.h}!countTiles@{countTiles}}
+\index{countTiles@{countTiles}!gameMove.h@{gameMove.h}}
+\doxysubsubsection{countTiles()}
+{\footnotesize\ttfamily \label{game_move_8h_a17ada230457aea5bbbae855401c5f219} 
+int count\+Tiles (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Counts the number of tiles the player has left to play. 
+
+Counts the total score of the tiles on the game board. ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em players\+Tiles} & The player\textquotesingle{}s tiles. \\
+\hline
+{\em num\+Tiles} & The number of tiles the player has. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the number of tiles left. 
+\end{DoxyReturn}
+\index{gameMove.h@{gameMove.h}!flipTile@{flipTile}}
+\index{flipTile@{flipTile}!gameMove.h@{gameMove.h}}
+\doxysubsubsection{flipTile()}
+{\footnotesize\ttfamily \label{game_move_8h_a8be94ec58f0e200e1de109611dce1812} 
+\textbf{ Tile} flip\+Tile (\begin{DoxyParamCaption}\item[{\textbf{ Tile}}]{d}{}\end{DoxyParamCaption})}
+
+
+
+Flips a tile\+: flips the number of side1 with the number of side2. 
+
+Removes a choosen tile from the player\textquotesingle{}s tiles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The tile to flip. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxyref{Tile}{p.}{struct_tile} Returns the flipped tile. 
+\end{DoxyReturn}
+\index{gameMove.h@{gameMove.h}!free\_game@{free\_game}}
+\index{free\_game@{free\_game}!gameMove.h@{gameMove.h}}
+\doxysubsubsection{free\_game()}
+{\footnotesize\ttfamily \label{game_move_8h_ad821c17bbf9a26a346b5733506782b8a} 
+void free\+\_\+game (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{, }\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Frees the memory allocated for the game board. 
+
+Initial function to start the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+Game} & The game board. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+\end{DoxyParams}
+\index{gameMove.h@{gameMove.h}!gameStart@{gameStart}}
+\index{gameStart@{gameStart}!gameMove.h@{gameMove.h}}
+\doxysubsubsection{gameStart()}
+{\footnotesize\ttfamily \label{game_move_8h_a9f4e80f26d1f8942519e8807dce3e1a6} 
+void game\+Start (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{, }\item[{int}]{num\+Tiles}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{}\end{DoxyParamCaption})}
+
+
+
+Initial function to choose the game mode and start the game. 
+
+Adds the chosen tile to the game board.
+
+
+\begin{DoxyParams}{Parameters}
+{\em players\+Tiles} & The player\textquotesingle{}s tiles. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+{\em board\+Game} & The game board. \\
+\hline
+\end{DoxyParams}
+Loop to decide the game mode, it\textquotesingle{}s a loop because that way if the user decides to read the rules then he can always go back and decide what mode to play.
+
+Start of the game in single-\/player mode
+
+Start of the game in AI mode
+
+Printing of the Information-\/\+Rules\index{gameMove.h@{gameMove.h}!removePlayerTile@{removePlayerTile}}
+\index{removePlayerTile@{removePlayerTile}!gameMove.h@{gameMove.h}}
+\doxysubsubsection{removePlayerTile()}
+{\footnotesize\ttfamily \label{game_move_8h_a112409fa80f120e1cbc3b048524625e6} 
+void remove\+Player\+Tile (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{, }\item[{int}]{num\+Tiles}{, }\item[{int}]{choice}{}\end{DoxyParamCaption})}
+
+
+
+Removes a choosen tile from the player\textquotesingle{}s tiles. 
+
+Function to swap two tiles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em players\+Tiles} & The player\textquotesingle{}s tiles. \\
+\hline
+{\em num\+Tiles} & The number of tiles the player has. \\
+\hline
+{\em choice} & The index of the tile to remove. \\
+\hline
+\end{DoxyParams}
+\index{gameMove.h@{gameMove.h}!scoreTile@{scoreTile}}
+\index{scoreTile@{scoreTile}!gameMove.h@{gameMove.h}}
+\doxysubsubsection{scoreTile()}
+{\footnotesize\ttfamily \label{game_move_8h_a743988c3dab2461ce01f43a629f2bb80} 
+int score\+Tile (\begin{DoxyParamCaption}\item[{\textbf{ Tile}}]{tile}{}\end{DoxyParamCaption})}
+
+
+
+Calculate the score of a tile which is the sum of side1+side2 of the tile. 
+
+Flips a tile\+: flips the number of side1 with the number of side2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The tile to calculate the score. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the score of the tile. 
+\end{DoxyReturn}
+\index{gameMove.h@{gameMove.h}!swapTiles@{swapTiles}}
+\index{swapTiles@{swapTiles}!gameMove.h@{gameMove.h}}
+\doxysubsubsection{swapTiles()}
+{\footnotesize\ttfamily \label{game_move_8h_a67d572a119d71806233d776fa79cc91f} 
+void swap\+Tiles (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{tile1}{, }\item[{\textbf{ Tile} $\ast$}]{tile2}{}\end{DoxyParamCaption})}
+
+
+
+Function to swap two tiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile1} & The tile to swap. \\
+\hline
+{\em tile2} & The other tile to swap. \\
+\hline
+\end{DoxyParams}

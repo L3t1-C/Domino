@@ -1,0 +1,153 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni}{1}{}%
+\contentsline {section}{\numberline {1.1}Author}{1}{}%
+\contentsline {chapter}{\numberline {2}Data Structure Index}{3}{}%
+\contentsline {section}{\numberline {2.1}Data Structures}{3}{}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{}%
+\contentsline {section}{\numberline {3.1}File List}{5}{}%
+\contentsline {chapter}{\numberline {4}Data Structure Documentation}{7}{}%
+\contentsline {section}{\numberline {4.1}Tile Struct Reference}{7}{}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{}%
+\contentsline {subsection}{\numberline {4.1.2}Field Documentation}{7}{}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}occupied}{7}{}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}side1}{7}{}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}side2}{8}{}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}special}{8}{}%
+\contentsline {subsubsection}{\numberline {4.1.2.5}vertical}{8}{}%
+\contentsline {chapter}{\numberline {5}File Documentation}{9}{}%
+\contentsline {section}{\numberline {5.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/include/checks.h File Reference}{9}{}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{}%
+\contentsline {subsection}{\numberline {5.1.2}Function Documentation}{10}{}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}checkEndgame()}{10}{}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}isValid()}{10}{}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}isValidFlat()}{11}{}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}possibleLeftCell()}{12}{}%
+\contentsline {subsubsection}{\numberline {5.1.2.5}possibleRightCell()}{12}{}%
+\contentsline {subsubsection}{\numberline {5.1.2.6}possibleRows()}{12}{}%
+\contentsline {section}{\numberline {5.2}checks.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{13}{}%
+\contentsline {section}{\numberline {5.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/include/game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ai.h File Reference}{13}{}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{14}{}%
+\contentsline {subsection}{\numberline {5.3.2}Function Documentation}{14}{}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}gameStartAi()}{14}{}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}MoveAi()}{14}{}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}sortTiles()}{15}{}%
+\contentsline {section}{\numberline {5.4}game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ai.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{16}{}%
+\contentsline {section}{\numberline {5.5}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/include/game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interactive.h File Reference}{16}{}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{16}{}%
+\contentsline {subsection}{\numberline {5.5.2}Function Documentation}{17}{}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}gameStartInteractive()}{17}{}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}makeMove()}{17}{}%
+\contentsline {subsubsection}{\numberline {5.5.2.3}tileOrientation()}{18}{}%
+\contentsline {section}{\numberline {5.6}game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interactive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{18}{}%
+\contentsline {section}{\numberline {5.7}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/include/game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Move.h File Reference}{18}{}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{19}{}%
+\contentsline {subsection}{\numberline {5.7.2}Function Documentation}{19}{}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}addTile()}{19}{}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}countScore()}{20}{}%
+\contentsline {subsubsection}{\numberline {5.7.2.3}countTiles()}{21}{}%
+\contentsline {subsubsection}{\numberline {5.7.2.4}flipTile()}{21}{}%
+\contentsline {subsubsection}{\numberline {5.7.2.5}free\_game()}{21}{}%
+\contentsline {subsubsection}{\numberline {5.7.2.6}gameStart()}{22}{}%
+\contentsline {subsubsection}{\numberline {5.7.2.7}removePlayerTile()}{22}{}%
+\contentsline {subsubsection}{\numberline {5.7.2.8}scoreTile()}{22}{}%
+\contentsline {subsubsection}{\numberline {5.7.2.9}swapTiles()}{23}{}%
+\contentsline {section}{\numberline {5.8}game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Move.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{23}{}%
+\contentsline {section}{\numberline {5.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/include/print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graphic.h File Reference}{23}{}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{24}{}%
+\contentsline {subsection}{\numberline {5.9.2}Function Documentation}{24}{}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}delay()}{24}{}%
+\contentsline {subsubsection}{\numberline {5.9.2.2}endScreen()}{24}{}%
+\contentsline {subsubsection}{\numberline {5.9.2.3}printBoardGame()}{25}{}%
+\contentsline {subsubsection}{\numberline {5.9.2.4}printFirstScreen()}{25}{}%
+\contentsline {subsubsection}{\numberline {5.9.2.5}printSelectedTiles()}{25}{}%
+\contentsline {subsubsection}{\numberline {5.9.2.6}printTiles()}{26}{}%
+\contentsline {subsubsection}{\numberline {5.9.2.7}printTilesPlayer()}{26}{}%
+\contentsline {subsubsection}{\numberline {5.9.2.8}show\_rules()}{26}{}%
+\contentsline {section}{\numberline {5.10}print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graphic.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{27}{}%
+\contentsline {section}{\numberline {5.11}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/include/tile.h File Reference}{27}{}%
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{27}{}%
+\contentsline {subsection}{\numberline {5.11.2}Function Documentation}{27}{}%
+\contentsline {subsubsection}{\numberline {5.11.2.1}initializationBoard()}{27}{}%
+\contentsline {subsubsection}{\numberline {5.11.2.2}initializationPlayerTiles()}{28}{}%
+\contentsline {subsubsection}{\numberline {5.11.2.3}initializationSpecialTiles()}{28}{}%
+\contentsline {section}{\numberline {5.12}tile.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{29}{}%
+\contentsline {section}{\numberline {5.13}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/include/user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inputs.h File Reference}{29}{}%
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{30}{}%
+\contentsline {subsection}{\numberline {5.13.2}Function Documentation}{30}{}%
+\contentsline {subsubsection}{\numberline {5.13.2.1}getMenuMode()}{30}{}%
+\contentsline {subsubsection}{\numberline {5.13.2.2}getMoveTiles()}{30}{}%
+\contentsline {subsubsection}{\numberline {5.13.2.3}getOrientation()}{31}{}%
+\contentsline {subsubsection}{\numberline {5.13.2.4}getPosition()}{31}{}%
+\contentsline {subsubsection}{\numberline {5.13.2.5}getRow()}{31}{}%
+\contentsline {subsubsection}{\numberline {5.13.2.6}getTilesNumber()}{32}{}%
+\contentsline {section}{\numberline {5.14}user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inputs.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{32}{}%
+\contentsline {section}{\numberline {5.15}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/main.c File Reference}{32}{}%
+\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{32}{}%
+\contentsline {subsection}{\numberline {5.15.2}Function Documentation}{33}{}%
+\contentsline {subsubsection}{\numberline {5.15.2.1}main()}{33}{}%
+\contentsline {section}{\numberline {5.16}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}README.md File Reference}{33}{}%
+\contentsline {section}{\numberline {5.17}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/src/checks.c File Reference}{33}{}%
+\contentsline {subsection}{\numberline {5.17.1}Detailed Description}{34}{}%
+\contentsline {subsection}{\numberline {5.17.2}Function Documentation}{34}{}%
+\contentsline {subsubsection}{\numberline {5.17.2.1}checkEndgame()}{34}{}%
+\contentsline {subsubsection}{\numberline {5.17.2.2}isValid()}{34}{}%
+\contentsline {subsubsection}{\numberline {5.17.2.3}isValidFlat()}{35}{}%
+\contentsline {subsubsection}{\numberline {5.17.2.4}possibleLeftCell()}{36}{}%
+\contentsline {subsubsection}{\numberline {5.17.2.5}possibleRightCell()}{36}{}%
+\contentsline {subsubsection}{\numberline {5.17.2.6}possibleRows()}{37}{}%
+\contentsline {section}{\numberline {5.18}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/src/game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ai.c File Reference}{38}{}%
+\contentsline {subsection}{\numberline {5.18.1}Detailed Description}{38}{}%
+\contentsline {subsection}{\numberline {5.18.2}Function Documentation}{38}{}%
+\contentsline {subsubsection}{\numberline {5.18.2.1}gameStartAi()}{38}{}%
+\contentsline {subsubsection}{\numberline {5.18.2.2}MoveAi()}{39}{}%
+\contentsline {subsubsection}{\numberline {5.18.2.3}sortTiles()}{40}{}%
+\contentsline {section}{\numberline {5.19}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/src/game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interactive.c File Reference}{41}{}%
+\contentsline {subsection}{\numberline {5.19.1}Detailed Description}{41}{}%
+\contentsline {subsection}{\numberline {5.19.2}Function Documentation}{41}{}%
+\contentsline {subsubsection}{\numberline {5.19.2.1}gameStartInteractive()}{41}{}%
+\contentsline {subsubsection}{\numberline {5.19.2.2}makeMove()}{42}{}%
+\contentsline {subsubsection}{\numberline {5.19.2.3}tileOrientation()}{42}{}%
+\contentsline {section}{\numberline {5.20}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/src/game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Move.c File Reference}{43}{}%
+\contentsline {subsection}{\numberline {5.20.1}Detailed Description}{43}{}%
+\contentsline {subsection}{\numberline {5.20.2}Function Documentation}{43}{}%
+\contentsline {subsubsection}{\numberline {5.20.2.1}addTile()}{43}{}%
+\contentsline {subsubsection}{\numberline {5.20.2.2}countScore()}{44}{}%
+\contentsline {subsubsection}{\numberline {5.20.2.3}countTiles()}{44}{}%
+\contentsline {subsubsection}{\numberline {5.20.2.4}flipTile()}{45}{}%
+\contentsline {subsubsection}{\numberline {5.20.2.5}free\_game()}{45}{}%
+\contentsline {subsubsection}{\numberline {5.20.2.6}gameStart()}{45}{}%
+\contentsline {subsubsection}{\numberline {5.20.2.7}removePlayerTile()}{46}{}%
+\contentsline {subsubsection}{\numberline {5.20.2.8}scoreTile()}{46}{}%
+\contentsline {subsubsection}{\numberline {5.20.2.9}swapTiles()}{46}{}%
+\contentsline {section}{\numberline {5.21}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/src/print\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graphic.c File Reference}{47}{}%
+\contentsline {subsection}{\numberline {5.21.1}Detailed Description}{47}{}%
+\contentsline {subsection}{\numberline {5.21.2}Function Documentation}{47}{}%
+\contentsline {subsubsection}{\numberline {5.21.2.1}delay()}{47}{}%
+\contentsline {subsubsection}{\numberline {5.21.2.2}endScreen()}{48}{}%
+\contentsline {subsubsection}{\numberline {5.21.2.3}printBoardGame()}{48}{}%
+\contentsline {subsubsection}{\numberline {5.21.2.4}printFirstScreen()}{48}{}%
+\contentsline {subsubsection}{\numberline {5.21.2.5}printSelectedTiles()}{48}{}%
+\contentsline {subsubsection}{\numberline {5.21.2.6}printTiles()}{49}{}%
+\contentsline {subsubsection}{\numberline {5.21.2.7}printTilesPlayer()}{49}{}%
+\contentsline {subsubsection}{\numberline {5.21.2.8}show\_rules()}{49}{}%
+\contentsline {section}{\numberline {5.22}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/src/tile.c File Reference}{49}{}%
+\contentsline {subsection}{\numberline {5.22.1}Detailed Description}{50}{}%
+\contentsline {subsection}{\numberline {5.22.2}Macro Definition Documentation}{50}{}%
+\contentsline {subsubsection}{\numberline {5.22.2.1}SPECIAL\_TILE\_1\_SIDE1}{50}{}%
+\contentsline {subsubsection}{\numberline {5.22.2.2}SPECIAL\_TILE\_1\_SIDE2}{50}{}%
+\contentsline {subsubsection}{\numberline {5.22.2.3}SPECIAL\_TILE\_2\_SIDE1}{50}{}%
+\contentsline {subsubsection}{\numberline {5.22.2.4}SPECIAL\_TILE\_2\_SIDE2}{50}{}%
+\contentsline {subsection}{\numberline {5.22.3}Function Documentation}{50}{}%
+\contentsline {subsubsection}{\numberline {5.22.3.1}initializationBoard()}{50}{}%
+\contentsline {subsubsection}{\numberline {5.22.3.2}initializationPlayerTiles()}{51}{}%
+\contentsline {subsubsection}{\numberline {5.22.3.3}initializationSpecialTiles()}{51}{}%
+\contentsline {section}{\numberline {5.23}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/letyc/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/882713\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cantoni/src/user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inputs.c File Reference}{52}{}%
+\contentsline {subsection}{\numberline {5.23.1}Detailed Description}{52}{}%
+\contentsline {subsection}{\numberline {5.23.2}Function Documentation}{53}{}%
+\contentsline {subsubsection}{\numberline {5.23.2.1}getMenuMode()}{53}{}%
+\contentsline {subsubsection}{\numberline {5.23.2.2}getMoveTiles()}{53}{}%
+\contentsline {subsubsection}{\numberline {5.23.2.3}getOrientation()}{53}{}%
+\contentsline {subsubsection}{\numberline {5.23.2.4}getPosition()}{53}{}%
+\contentsline {subsubsection}{\numberline {5.23.2.5}getRow()}{54}{}%
+\contentsline {subsubsection}{\numberline {5.23.2.6}getTilesNumber()}{54}{}%
+\contentsline {chapter}{Index}{55}{}%

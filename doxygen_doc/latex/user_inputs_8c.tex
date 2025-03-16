@@ -1,0 +1,134 @@
+\doxysection{C\+:/\+Users/letyc/\+Desktop/882713\+\_\+\+Cantoni/src/user\+Inputs.c File Reference}
+\label{user_inputs_8c}\index{C:/Users/letyc/Desktop/882713\_Cantoni/src/userInputs.c@{C:/Users/letyc/Desktop/882713\_Cantoni/src/userInputs.c}}
+
+
+This file implements all the functions that are used to get the user\textquotesingle{}s input to make the moves in the game.  
+
+
+{\ttfamily \#include "{}../include/user\+Inputs.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ get\+Tiles\+Number} ()
+\begin{DoxyCompactList}\small\item\em Asks the player with how many tiles he wants to play with. \end{DoxyCompactList}\item 
+int \textbf{ get\+Menu\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Displays the game mode menu and returns the user\textquotesingle{}s choice of game mode.(Singleplayer,AI or Game Rules) \end{DoxyCompactList}\item 
+int \textbf{ get\+Move\+Tiles} (int curren\+Tiles)
+\begin{DoxyCompactList}\small\item\em Asks the player and then returns the tile to play chosen by the player. \end{DoxyCompactList}\item 
+char \textbf{ get\+Orientation} ()
+\begin{DoxyCompactList}\small\item\em Asks and returns the action that the player wants to do with the chosen tile. for example flip it, put it vertical, confirm or exit. \end{DoxyCompactList}\item 
+int \textbf{ get\+Row} (int num\+Rows)
+\begin{DoxyCompactList}\small\item\em Asks and returns the row where the player wants to insert the tile. \end{DoxyCompactList}\item 
+char \textbf{ get\+Position} (int num\+Tiles)
+\begin{DoxyCompactList}\small\item\em Asks and returns the position where the player wants to insert the tile. (right or left) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file implements all the functions that are used to get the user\textquotesingle{}s input to make the moves in the game. 
+
+\begin{DoxyAuthor}{Author}
+Cantoni Letizia 882713 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\index{userInputs.c@{userInputs.c}!getMenuMode@{getMenuMode}}
+\index{getMenuMode@{getMenuMode}!userInputs.c@{userInputs.c}}
+\doxysubsubsection{getMenuMode()}
+{\footnotesize\ttfamily \label{user_inputs_8c_aff90703907dd75dfdc5a407134047c9a} 
+int get\+Menu\+Mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the game mode menu and returns the user\textquotesingle{}s choice of game mode.(Singleplayer,AI or Game Rules) 
+
+\begin{DoxyReturn}{Returns}
+int return the user\textquotesingle{}s choice of game mode. 
+\end{DoxyReturn}
+clean the input buffer ~\newline
+
+
+Reset the choice\index{userInputs.c@{userInputs.c}!getMoveTiles@{getMoveTiles}}
+\index{getMoveTiles@{getMoveTiles}!userInputs.c@{userInputs.c}}
+\doxysubsubsection{getMoveTiles()}
+{\footnotesize\ttfamily \label{user_inputs_8c_a122dca6c0208e8ca439b26fa5157834d} 
+int get\+Move\+Tiles (\begin{DoxyParamCaption}\item[{int}]{curren\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Asks the player and then returns the tile to play chosen by the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curren\+Tiles} & The current number of tiles. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the chosen tile. 
+\end{DoxyReturn}
+clean the input buffer ~\newline
+\index{userInputs.c@{userInputs.c}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!userInputs.c@{userInputs.c}}
+\doxysubsubsection{getOrientation()}
+{\footnotesize\ttfamily \label{user_inputs_8c_a83296f77508735b98a3082685640cbd7} 
+char get\+Orientation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Asks and returns the action that the player wants to do with the chosen tile. for example flip it, put it vertical, confirm or exit. 
+
+\begin{DoxyReturn}{Returns}
+char Returns the chosen action. 
+\end{DoxyReturn}
+clean the input buffer ~\newline
+\index{userInputs.c@{userInputs.c}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!userInputs.c@{userInputs.c}}
+\doxysubsubsection{getPosition()}
+{\footnotesize\ttfamily \label{user_inputs_8c_a83780bef2e34927e68447ebc1a06ee0a} 
+char get\+Position (\begin{DoxyParamCaption}\item[{int}]{num\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Asks and returns the position where the player wants to insert the tile. (right or left) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Tiles} & The number of tiles. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char Returns the chosen position. 
+\end{DoxyReturn}
+clean the input buffer ~\newline
+\index{userInputs.c@{userInputs.c}!getRow@{getRow}}
+\index{getRow@{getRow}!userInputs.c@{userInputs.c}}
+\doxysubsubsection{getRow()}
+{\footnotesize\ttfamily \label{user_inputs_8c_a30dbc2ca04b38d7fdd3cb5c7ddd1fff2} 
+int get\+Row (\begin{DoxyParamCaption}\item[{int}]{num\+Rows}{}\end{DoxyParamCaption})}
+
+
+
+Asks and returns the row where the player wants to insert the tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Rows} & The number of rows. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the chosen row. 
+\end{DoxyReturn}
+clean the input buffer ~\newline
+\index{userInputs.c@{userInputs.c}!getTilesNumber@{getTilesNumber}}
+\index{getTilesNumber@{getTilesNumber}!userInputs.c@{userInputs.c}}
+\doxysubsubsection{getTilesNumber()}
+{\footnotesize\ttfamily \label{user_inputs_8c_aef68e32e0c1565d7885f6bd57a91c3a1} 
+int get\+Tiles\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Asks the player with how many tiles he wants to play with. 
+
+\begin{DoxyReturn}{Returns}
+int return the user\textquotesingle{}s choice of tiles number he wants to play with. 
+\end{DoxyReturn}

@@ -1,0 +1,127 @@
+\doxysection{C\+:/\+Users/letyc/\+Desktop/882713\+\_\+\+Cantoni/src/game\+Interactive.c File Reference}
+\label{game_interactive_8c}\index{C:/Users/letyc/Desktop/882713\_Cantoni/src/gameInteractive.c@{C:/Users/letyc/Desktop/882713\_Cantoni/src/gameInteractive.c}}
+
+
+This file implements the functions used to play the game in the Interactive Mode.  
+
+
+{\ttfamily \#include "{}../include/game\+Interactive.\+h"{}}\newline
+{\ttfamily \#include "{}../include/tile.\+h"{}}\newline
+{\ttfamily \#include "{}../include/game\+Move.\+h"{}}\newline
+{\ttfamily \#include "{}../include/print\+Graphic.\+h"{}}\newline
+{\ttfamily \#include "{}../include/user\+Inputs.\+h"{}}\newline
+{\ttfamily \#include "{}../include/checks.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ make\+Move} (\textbf{ Tile} selected\+Tiles, int num\+Tiles, \textbf{ Tile} $\ast$$\ast$board\+Game, int choice, \textbf{ Tile} $\ast$players\+Tiles)
+\begin{DoxyCompactList}\small\item\em Function to get the input from the player to where insert the tile. \end{DoxyCompactList}\item 
+void \textbf{ tile\+Orientation} (int choice, \textbf{ Tile} selected\+Tiles, \textbf{ Tile} $\ast$players\+Tiles, int num\+Tiles, \textbf{ Tile} $\ast$$\ast$board\+Game, int first)
+\begin{DoxyCompactList}\small\item\em Given a tile, take the input of the player to whether to flip it, put it vertical,confirm or exit. \end{DoxyCompactList}\item 
+void \textbf{ game\+Start\+Interactive} (\textbf{ Tile} $\ast$players\+Tiles, int num\+Tiles, \textbf{ Tile} $\ast$$\ast$board\+Game)
+\begin{DoxyCompactList}\small\item\em Initial function to choose the tile (interactive mode). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file implements the functions used to play the game in the Interactive Mode. 
+
+\begin{DoxyAuthor}{Author}
+Cantoni Letizia 882713 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\index{gameInteractive.c@{gameInteractive.c}!gameStartInteractive@{gameStartInteractive}}
+\index{gameStartInteractive@{gameStartInteractive}!gameInteractive.c@{gameInteractive.c}}
+\doxysubsubsection{gameStartInteractive()}
+{\footnotesize\ttfamily \label{game_interactive_8c_a456fa4ef6bb9048cbaf416cf8c95a7d1} 
+void game\+Start\+Interactive (\begin{DoxyParamCaption}\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{, }\item[{int}]{num\+Tiles}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{}\end{DoxyParamCaption})}
+
+
+
+Initial function to choose the tile (interactive mode). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players\+Tiles} & The player\textquotesingle{}s tiles. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+{\em board\+Game} & The game board. \\
+\hline
+\end{DoxyParams}
+Get the tile the player wants to play
+
+This happens only for the first move
+
+The special tiles [11$\vert$11] and [12$\vert$21] cannot be placed in the first position
+
+Get the tile the player wants to play
+
+If all the tiles have been inserted print
+
+else print the remaining tiles\index{gameInteractive.c@{gameInteractive.c}!makeMove@{makeMove}}
+\index{makeMove@{makeMove}!gameInteractive.c@{gameInteractive.c}}
+\doxysubsubsection{makeMove()}
+{\footnotesize\ttfamily \label{game_interactive_8c_a44b14430b377a2445934b6556d4c97de} 
+void make\+Move (\begin{DoxyParamCaption}\item[{\textbf{ Tile}}]{selected\+Tiles}{, }\item[{int}]{num\+Tiles}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{, }\item[{int}]{choice}{, }\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{}\end{DoxyParamCaption})}
+
+
+
+Function to get the input from the player to where insert the tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected\+Tiles} & The tile selected ti insert. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+{\em board\+Game} & The game board. \\
+\hline
+{\em choice} & The chosen tile. \\
+\hline
+{\em players\+Tiles} & The player\textquotesingle{}s tiles. \\
+\hline
+\end{DoxyParams}
+the number of the row a tile can be placed
+
+if the number of rows$>$1 asks the player which row he wants to put it in
+
+Ask the player where he wants to put the tile, left or right
+
+retrieve the right column where to put the tile
+
+retrieve the left column where to put the tile
+
+if there is a column for the move
+
+if the move is valid
+
+makes the move\index{gameInteractive.c@{gameInteractive.c}!tileOrientation@{tileOrientation}}
+\index{tileOrientation@{tileOrientation}!gameInteractive.c@{gameInteractive.c}}
+\doxysubsubsection{tileOrientation()}
+{\footnotesize\ttfamily \label{game_interactive_8c_a2f5796e2b05efaaf6fac7af48c1a540e} 
+void tile\+Orientation (\begin{DoxyParamCaption}\item[{int}]{choice}{, }\item[{\textbf{ Tile}}]{selected\+Tiles}{, }\item[{\textbf{ Tile} $\ast$}]{players\+Tiles}{, }\item[{int}]{num\+Tiles}{, }\item[{\textbf{ Tile} $\ast$$\ast$}]{board\+Game}{, }\item[{int}]{first}{}\end{DoxyParamCaption})}
+
+
+
+Given a tile, take the input of the player to whether to flip it, put it vertical,confirm or exit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & The chosen tile. \\
+\hline
+{\em selected\+Tiles} & The selected tile. \\
+\hline
+{\em players\+Tiles} & The player\textquotesingle{}s tiles. \\
+\hline
+{\em num\+Tiles} & The number of tiles in the game. \\
+\hline
+{\em board\+Game} & The game board. \\
+\hline
+{\em first} & Whether it\textquotesingle{}s the first move. \\
+\hline
+\end{DoxyParams}
+choose what to do with the tile\+: flip it, put it vertical, confirm or exit
+
+if confirmed go to make\+Move
