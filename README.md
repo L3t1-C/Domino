@@ -1,12 +1,22 @@
-# 882713_Cantoni
-Questo progetto implementa il gioco del Domino
+Domino Game Implementation
+# Overview
 
-# Compilazione
+This project implements the Domino game, including special variants, using the C language.
 
-Il progetto utilizza un Makefile per la compilazione. 
-Puoi compilare il progetto utilizzando il comando `make` nel terminale.
-Per eseguire il programma utilizza `./iap`
-Per rimuovere i file oggetto e l’eseguibile, utilizza il comando `make clean`
+# Compilation
+
+The project uses a Makefile for compilation. You can build and run it with the following commands:
+Compile the project: `make` (on the terminal).
+Run the program: `./iap`
+Clean up object files and executable: `make clean`
+
+# Documentation
+
+For more details about the project, refer to the documentation PDF included in the repository.
+To understand the code structure, Doxygen is available for code documentation.
+
 
 # Author
-Cantoni Letizia, matricola: 882713
+
+Cantoni Letizia
+
